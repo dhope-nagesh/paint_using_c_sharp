@@ -18,10 +18,14 @@ namespace dynamic_events
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Height = 540;
+            this.Width = 700;
+            numericUpDown1.Value = 10;
+            _Pen = new Pen(new SolidBrush(Color.Black), (float)numericUpDown1.Value);
             label_color_indicator.BackColor = Color.Black;
             PictureBox picture_box = new PictureBox();
-
-            picture_box.Location = new Point(100, 100);
+            picture_box.BackColor = Color.White;
+            picture_box.Location = new Point(0, 0);
             picture_box.BorderStyle = BorderStyle.FixedSingle;
             picture_box.Size = new Size(500, 500);
             this.Controls.Add(picture_box);
@@ -35,8 +39,9 @@ namespace dynamic_events
         }
 
         private Point? _Previous = null;
-        private Pen _Pen = new Pen(Color.Black, 10);
-        
+        SolidBrush solidBrush = new SolidBrush(Color.Black);
+
+        private Pen _Pen = new Pen(new SolidBrush(Color.Black), 10);
         private void pictureBox_MouseDown(object sender, MouseEventArgs e)
         {
             PictureBox tmpPicBox = (PictureBox)sender;
@@ -78,11 +83,23 @@ namespace dynamic_events
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void label_color_indicator_Click(object sender, EventArgs e)
+        {
             if (colorDialog1.ShowDialog() != DialogResult.Cancel)
             {
-                _Pen = new Pen(colorDialog1.Color, 10);
+                _Pen = new Pen(colorDialog1.Color, (float)numericUpDown1.Value);
                 label_color_indicator.BackColor = colorDialog1.Color;
             }
+        }
+
+      
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+           _Pen = new Pen(Color.Black, (float)numericUpDown1.Value);
         }
     }
 }
