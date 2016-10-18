@@ -1,0 +1,8 @@
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\obj\Debug\dynamic_events.Form1.resources
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\obj\Debug\dynamic_events.Properties.Resources.resources
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\obj\Debug\dynamic_events.csproj.GenerateResource.Cache
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\bin\Debug\dynamic_events.exe
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\bin\Debug\dynamic_events.pdb
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\obj\Debug\dynamic_events.exe
+C:\Users\DNA\Documents\Visual Studio 2008\Projects\dynamic_events\dynamic_events\obj\Debug\dynamic_events.pdb
