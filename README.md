@@ -1,1 +1,1 @@
-# paint_using_c_sharp
+# Paint application using c sharp
