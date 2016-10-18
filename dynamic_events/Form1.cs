@@ -24,12 +24,12 @@ namespace dynamic_events
             picture_box.Location = new Point(100, 100);
             picture_box.BorderStyle = BorderStyle.FixedSingle;
             picture_box.Size = new Size(500, 500);
-            this.Controls.Add(btn);
+            this.Controls.Add(picture_box);
            
             //register events 
-            btn.MouseDown += new MouseEventHandler(pictureBox_MouseDown);
-            btn.MouseUp += new MouseEventHandler(pictureBox_MouseUp);
-            btn.MouseMove += new MouseEventHandler(pictureBox_MouseMove);
+            picture_box.MouseDown += new MouseEventHandler(pictureBox_MouseDown);
+            picture_box.MouseUp += new MouseEventHandler(pictureBox_MouseUp);
+            picture_box.MouseMove += new MouseEventHandler(pictureBox_MouseMove);
 
 
         }
